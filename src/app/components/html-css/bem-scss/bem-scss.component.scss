@@ -1,0 +1,14 @@
+$my-color: red;
+
+.lista {
+  &__elemento1 {
+    &-input {
+      border-radius: 16px;
+    }
+  }
+  &__elemento2 {
+    &--danger {
+      color: $my-color;
+    }
+  }
+}

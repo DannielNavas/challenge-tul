@@ -1,0 +1,61 @@
+<div class="row1-container">
+  <div class="row1-container__box box box--down cyan">
+    <h2 class="box__title">Input / output</h2>
+    <p class="box__description">
+      1. Validar el componente Input para ver su valor aca:
+      <br />
+      <br />
+      <app-input [values]="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"></app-input>
+      <br />
+      Valor esperado: 30
+      <br />
+      <br />
+    </p>
+    <p class="box__description">
+      2. Validar el componente Output para ver su valor aca:
+      <br />
+      <app-output (outputEmitter)="setData($event)"></app-output>
+      <br />
+      <br />
+      Valor Emitido: {{ emitValue }}
+      <br />
+      Valor esperado: Lo logre!!!
+      <!-- aca debe mostrar el valor del output -->
+      <br />
+      <br />
+    </p>
+  </div>
+
+  <div class="row1-container__box box red">
+    <h2 class="box__title">Directivas</h2>
+    <p class="box__description">
+      1. Mostrar la data que esta en el template de client:
+      <br />
+      <app-directives></app-directives>
+    </p>
+  </div>
+
+  <div class="row1-container__box box box--down blue">
+    <h2 class="box__title">NGRX</h2>
+    <p class="box__description">
+      1. Tomar la data que esta en el estado de clientes y mostrarla:
+      <br />
+      1.1 Emitir un cambio ejecutando el estado de add (data quemada)
+      <br />
+      1.2. Emitir un cambio ejecutando el estado de edit (data quemada)
+      <br />
+      <app-ngrx></app-ngrx>
+    </p>
+  </div>
+</div>
+<div class="row2-container">
+  <div class="row2-container__box box orange">
+    <h2 class="box__title">Pipes</h2>
+    <p class="box__description">
+      1.Escribir la definición del pipe para que tranforme un string en
+      lowerCase o UpperCase dependiendo el parametro que se envie
+      <br />
+      <app-pipes></app-pipes>
+    </p>
+  </div>
+</div>

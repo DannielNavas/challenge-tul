@@ -1,0 +1,80 @@
+<ul class="container-options">
+  <li class="container-options__card card">
+    <div class="card__background" alt=""></div>
+    <div class="overlay">
+      <div class="overlay__header">Scope</div>
+      <p class="overlay__description">
+        En este ejercicio debes responder 3 casos donde el scope de una variable
+        se modifica, para iniciar da click en el siguiente botton
+        <br />
+        <br />
+        <button class="button" type="button" (click)="scopeExercise()">
+          Iniciar
+        </button>
+      </p>
+    </div>
+  </li>
+
+  <li class="container-options__card card">
+    <div class="card__background" alt=""></div>
+    <div class="overlay">
+      <div class="overlay__header">Referencia VS Valor</div>
+      <p class="overlay__description">
+        Los valores pueden pasarse por referencia o por valor en el siguiente
+        ejercicio validaremos estos comportamientos
+        <br />
+        <br />
+        <button class="button" type="button" (click)="referenceVSvalue()">
+          Iniciar
+        </button>
+      </p>
+    </div>
+  </li>
+
+  <li class="container-options__card card">
+    <div class="card__background" alt=""></div>
+    <div class="overlay">
+      <div class="overlay__header">Copia de datos</div>
+      <p class="overlay__description">
+        Copiar datos en profundidad o en primer nivel es un comportamiento del
+        día a día ya sea copiando arreglos, variables o objetos, a continuación
+        validaremos estos comportamientos
+        <br />
+        <br />
+        <button class="button" type="button" (click)="copyData()">
+          Iniciar
+        </button>
+      </p>
+    </div>
+  </li>
+
+  <li class="container-options__card card">
+    <div class="card__background" alt=""></div>
+    <div class="overlay">
+      <div class="overlay__header">Operadores</div>
+      <p class="overlay__description">
+        Todos los dias usamos el operador ternario (condition ? expr : expr),
+        operadores AND (&&) , operadores OR (||) , operador nullish coalescing
+        (??) a continuación validaremos estos comportamientos
+        <br />
+        <br />
+        <button class="button" type="button" (click)="operators()">
+          Iniciar
+        </button>
+      </p>
+    </div>
+  </li>
+</ul>
+
+<div class="container-close-editor">Editor</div>
+
+<div class="container-code-editor">
+  <ngs-code-editor
+    appRestricted
+    *ngIf="visible"
+    [theme]="'vs-dark'"
+    [codeModel]="codeModel"
+    [options]="options"
+  >
+  </ngs-code-editor>
+</div>

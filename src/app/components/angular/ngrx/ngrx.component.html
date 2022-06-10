@@ -1,0 +1,14 @@
+<div class="container-clients">
+  <h3>Lista de clientes</h3>
+  <ng-container *ngFor="let item of clients">
+    <!-- imprimir los clientes -->
+    {{ item.name }}
+  </ng-container>
+</div>
+<br />
+
+<div class="container-buttons">
+  <button (click)="addElement()">Agregar</button>
+  <button (click)="modifyElement()">Editar</button>
+  <button (click)="deleteElement()">Eliminar</button>
+</div>

@@ -1,0 +1,22 @@
+<ol class="container-order-list">
+  <!-- 1. Implementar un ngfor para renderizar data, implementar el trackby si lo conoce  -->
+  <!-- 2. Usa el template de clientTemplate para poder visializar cada uno de los items del ngfor-->
+  <!-- 3. Usa algun operador o directiva para mostrar todos los datos menos el de id 5 -->
+  <!-- 4. Si conoce las directivas personalizadas implemente y utilice own-directive -->
+  <li *ngFor="let dato of datos">
+    <p *ngIf="dato?.id !== 5">
+      {{ dato?.id }}-{{ dato?.name }}-{{ dato?.lastName }}-{{ dato?.age }}
+    </p>
+  </li>
+</ol>
+
+<ng-template
+  #clientTemplate
+  let-name="name"
+  let-id="id"
+  let-lastName="lastName"
+  let-age="age"
+  let-index="index"
+>
+  <li>{{ id }}-{{ name }}-{{ lastName }}-{{ age }}</li>
+</ng-template>

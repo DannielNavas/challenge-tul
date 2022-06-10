@@ -1,0 +1,54 @@
+/* 3. si descomento el primer bloque comentado que ocurre, validar el ts y el css */
+
+/* por que ocurre esto? */
+
+/* 3.1 ocurre lo mismo si descomento el segundo bloque? */
+
+/* por que ocurre esto? */
+
+/* 3.2 ocurre lo mismo si descomento el tercer bloque? */
+
+/* por que ocurre esto? */
+
+/* ----------------------------------------------- */
+
+/* PRIMER BLOQUE */
+/*  #id-container-prueba-css {
+   background-image: linear-gradient(
+     135deg,
+     #6770d7 0,
+     #5062cc 50%,
+     #3455c1 100%
+   );
+ } */
+
+/* SEGUNDO BLOQUE */
+/* .container-prueba-css {
+   background-image: linear-gradient(
+     135deg,
+     #fff650 0,
+     #ebe736 50%,
+     #d6d811 100%
+   );
+ } */
+
+/* TERCER BLOQUE */
+/* .container-prueba-css {
+  background-image: linear-gradient(135deg,
+      #f6533c 0,
+      #f14739 25%,
+      #eb3936 50%,
+      #e52833 75%,
+      #e00f32 100%) !important;
+} */
+
+.container-prueba-css__internal-square {
+  background-image: linear-gradient(
+    135deg,
+    #8cd859 0,
+    #7cd355 25%,
+    #6acc50 50%,
+    #56c54c 75%,
+    #40bf49 100%
+  );
+}

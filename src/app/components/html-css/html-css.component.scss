@@ -1,0 +1,30 @@
+.container-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .button {
+    &:nth-child(1) {
+      background-image: linear-gradient(
+        135deg,
+        #8cd859 0,
+        #7cd355 25%,
+        #6acc50 50%,
+        #56c54c 75%,
+        #40bf49 100%
+      );
+    }
+    &:nth-child(2) {
+      background-image: linear-gradient(
+        135deg,
+        #6770d7 0,
+        #5062cc 50%,
+        #3455c1 100%
+      );
+    }
+    cursor: pointer;
+  }
+}
+
+// CSS
+
+// SCSS - BEM
