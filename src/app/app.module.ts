@@ -12,7 +12,7 @@ import * as fromReduce from './shared/ngrx/reducers/clients';
 import { StringPipe } from './shared/pipes/string.pipe';
 
 @NgModule({
-  declarations: [AppComponent, AppRestricted, StringPipe],
+  declarations: [AppComponent, AppRestricted],
   imports: [
     BrowserModule,
     FormsModule,
