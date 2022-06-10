@@ -10,8 +10,6 @@ import { OutputModule } from './output/output.module';
 import { PipesModule } from './pipes/pipes.module';
 import { NgrxModule } from './ngrx/ngrx.module';
 
-import { StringPipe } from '../../shared/pipes/string.pipe';
-
 @NgModule({
   exports: [AngularComponent],
   imports: [
@@ -25,6 +23,6 @@ import { StringPipe } from '../../shared/pipes/string.pipe';
     PipesModule,
     NgrxModule,
   ],
-  declarations: [AngularComponent, StringPipe],
+  declarations: [AngularComponent],
 })
 export class AngularModule {}
