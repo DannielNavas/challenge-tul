@@ -14,18 +14,15 @@ export class InputComponent implements OnInit {
 
   @Input('values')
   set setValue(values: Array<number>) {
-    const pares = this.getPares(values);
-    for (let i of pares) {
-        this.sum += i;
-    }
+    this.sum = this.getPares(values);
   }
 
   constructor() {}
 
   ngOnInit() {}
 
-  getPares(list: number[]): number[] {
-      return list.filter((numero) => numero % 2 === 0)
+  getPares(list: number[]): number {
+      return list.filter((numero) => numero % 2 === 0).reduce((pre, acc) => acc + pre)
   }
 
 }
