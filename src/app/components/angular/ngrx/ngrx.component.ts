@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Client, Type } from '../../../shared/ngrx/interfaces/clients';
 
-import { Add } from '../../../shared/ngrx/actions/clients';
+import { Add, Modify, Remove } from '../../../shared/ngrx/actions/clients';
 
 @Component({
   selector: 'app-ngrx',
@@ -38,6 +38,7 @@ export class NgrxComponent implements OnInit {
 
   deleteElement() {
     //Eliminar el id 2
+    this.store.dispatch(Remove({ id: 2 }));
   }
 
   modifyElement() {
@@ -47,5 +48,7 @@ export class NgrxComponent implements OnInit {
       type: Type.IRONMONGER,
     };
     //Modificar el primer elemento de clientes   { id: 1, name: 'Andres', type: Type.BUILDER }
+    const { id } = client;
+    this.store.dispatch(Modify({ id, client }));
   }
 }
