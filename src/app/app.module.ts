@@ -7,8 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { CodeEditorModule } from '@ngstack/code-editor';
 import { AppRestricted } from './shared/directives/hostlisteners.directive';
 import { StoreModule } from '@ngrx/store';
-
 import * as fromReduce from './shared/ngrx/reducers/clients';
+
+import { StringPipe } from './shared/pipes/string.pipe';
 
 @NgModule({
   declarations: [AppComponent, AppRestricted],
