@@ -6,7 +6,7 @@ import { StringPipe } from '../../../shared/pipes/string.pipe';
 
 @NgModule({
   exports: [PipesComponent],
-  imports: [CommonModule, FormsModule, ],
+  imports: [CommonModule, FormsModule, StringPipe],
   declarations: [PipesComponent],
   //importar el pipe que esta en la carpeta de shared pipes
 })
